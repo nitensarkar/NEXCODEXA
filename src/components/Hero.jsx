@@ -28,28 +28,28 @@ const Hero = () => {
 
                 className="text-4xl sm:text-5xl md:text-6xl xl:text-[64px] 
                  font-medium xl:leading-[95px] max-w-5xl text-center dark:text-gray-200">
-                  We Build Digital Solutions That Drive <span
+                Build Smarter Digital Experiences That Accelerate <span
                     className="bg-gradient-to-r from-[#5044E5] to-[#4D8CFF] 
                 bg-clip-text text-transparent" >Business Growth</span> .</motion.h1>
 
-            <motion.p 
-            initial={{ opacity: 0, y: 30 }}
+            <motion.p
+                initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 1 }}
                 viewport={{ once: true }}
 
 
-            className="text-sm sm:text-lg font-medium text-gray-500 dark:text-white/75 max-w-2xl mx-auto pb-3">
-                Helping businesses grow through modern websites, AI, automation, and digital marketing.</motion.p>
+                className="text-sm sm:text-lg font-medium text-gray-500 dark:text-white/75 max-w-2xl mx-auto pb-3">
+                We help businesses grow with custom websites, AI automation, software solutions, and digital marketing that deliver real results.</motion.p>
 
 
             <motion.div
-            initial={{ opacity: 0, scale :0.9 }}
+                initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.8 }}
                 viewport={{ once: true }}
-            
-            className="relative">
+
+                className="relative">
                 <img src={assets.hero_img} alt="" className='w-full max-w-6xl' />
                 <img src={assets.bgImage1} alt="" className='absolute -top-10 -right-40 sm:top-[-120px] sm:right-[-40px] z-[-1] dark:hidden' />
             </motion.div>

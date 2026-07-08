@@ -1,7 +1,7 @@
-import React from 'react'
+import 'react'
 import Title from './Title'
 import assets from '../assets/assets';
-import { delay, motion } from "motion/react"
+import { motion } from "motion/react"
 
 
 const OurWork = () => {
@@ -10,17 +10,17 @@ const OurWork = () => {
     const workData = [
         {
             title: 'Corporate Business Website',
-            Description: 'Modern, responsive, and SEO-friendly website built for performance and lead generation.',
+            Description: 'A modern, responsive, and SEO-optimized website designed to strengthen brand identity, improve user experience, and generate high-quality business leads.',
             image: assets.work_mobile_app
         },
         {
-            title: 'Corporate Business Website',
-            Description: 'Modern, responsive, and SEO-friendly website built for performance and lead generation.',
+            title: 'AI Business Automation',
+            Description: 'Developed an AI-powered automation system that streamlined daily operations, reduced manual tasks, and improved overall business efficiency through smart workflows.',
             image: assets.work_dashboard_management
         },
         {
-            title: 'Corporate Business Website',
-            Description: 'Modern, responsive, and SEO-friendly website built for performance and lead generation.',
+            title: 'Branding & Digital Marketing',
+            Description: 'Created a complete brand identity and executed targeted digital marketing campaigns that increased online visibility, customer engagement, and business growth.',
             image: assets.work_fitness_app
         },
     ]

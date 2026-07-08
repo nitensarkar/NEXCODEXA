@@ -1,7 +1,7 @@
-import React from 'react'
+import 'react'
 import Title from './Title'
 import { teamData } from '../assets/assets'
-import { delay, motion } from "motion/react"
+import { motion } from "motion/react"
 
 
 const Teams = () => {

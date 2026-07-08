@@ -1,4 +1,4 @@
-import React from 'react'
+import 'react'
 import Title from './Title'
 import assets from '../assets/assets'
 import toast from 'react-hot-toast';

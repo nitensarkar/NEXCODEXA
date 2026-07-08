@@ -1,7 +1,9 @@
-import React from 'react'
+import 'react'
 import assets from '../assets/assets'
 import Title from './Title'
 import ServiceCard from './ServiceCard'
+import { motion } from "motion/react"
+
 
 const Services = () => {
 
@@ -27,19 +29,28 @@ const Services = () => {
             icon: assets.ads_icon
         },
         {
-            title: 'Digital Marketing',
-            description: 'Reach the right audience with data-driven marketing strategies that generate quality leads and maximize ROI.',
+            title: 'Google Ads',
+            description: 'Reach potential customers instantly with high-performing Google Ads campaigns that drive targeted traffic, increase conversions, and maximize your return on investment.',
             icon: assets.ads_icon
         },
         {
-            title: 'Digital Marketing',
-            description: 'Reach the right audience with data-driven marketing strategies that generate quality leads and maximize ROI.',
+            title: 'Business Branding',
+            description: 'Create a unique and professional brand identity through logo design, visual branding, and strategic positioning that builds recognition and customer trust.',
             icon: assets.ads_icon
         },
     ]
 
     return (
-        <div id='services' className=' mt-16 relative flex flex-col items-center gap-7 px-4 sm:px-12 lg:px-24 xl:px-40 text-gray-700 dark:text-white'>
+        <motion.div 
+        initial = "hidden"
+        whileInView= "visible"
+        viewport={{once : true}}
+        transition={{staggerChildren : 0.2}}
+        
+
+
+        
+        id='services' className=' mt-16 relative flex flex-col items-center gap-7 px-4 sm:px-12 lg:px-24 xl:px-40 text-gray-700 dark:text-white'>
             <img src={assets.bgImage2} alt="" className='absolute -top-110 -left-70  z-[-1] dark:hidden' />
 
             <Title title="How can we Help?" description="Discover the range of services we offer to help your business grow and succeed in the digital landscape." />
@@ -49,7 +60,7 @@ const Services = () => {
                     <ServiceCard key={index} service={service} index={index} />
                 ))}
             </div>
-        </div>
+        </motion.div>
     )
 }
 

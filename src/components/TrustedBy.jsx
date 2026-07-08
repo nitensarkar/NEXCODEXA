@@ -1,4 +1,4 @@
-import React from 'react'
+import 'react'
 import {company_logos} from '../assets/assets'
 import { motion } from "motion/react"
 
